@@ -14,7 +14,7 @@ Users should be able to:
 
 
 ## Screenshot
-![Desktop Preview] (./Stats preview card.png)
+<img width="2096" height="1120" src="./Stats preview card.png" alt="Stats preview card">
 
 # Acknowledgements
 
