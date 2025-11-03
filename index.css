@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca&display=swap');
+:root {
+   /* Colors */
+   --color-white: hsl(0, 100%, 100%);
+   --color-navy-950: hsl(233, 47%, 7%);
+   --color-blue-950: hsl(244, 37%, 16%);
+   --color-puple-500: hsl(277, 64%, 61%);
+   /* Spacing */
+   --spacing-100: 8px;
+   --spacing-300: 24px;
+   --spacing-400: 32px;
+   --spacing-500: 40px;
+   --spacing-800: 64px;
+   --spacing-900: 72px;
+   --spacing-1000: 80px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "inter", sans-serif;
+   font-weight: 700;
+}
+.lexend-deca {
+   font-family: "lexend deca", sans-serif;
+   font-size: 12px;
+   line-height: 200%;
+   letter-spacing: 1px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+/* LAYOUTS */
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+main{
+   width: 100vw;
+   height: 100vh;
+   background-color: var(--color-navy-950);
+   color: var(--color-white);
+}
+.card {
+   border-radius: var(--spacing-100);
+   overflow: hidden;
+   background-color: var(--color-blue-950);
+   max-width: 1128px;
+}
+.stat-image {
+   height: 442px;
+   width: 564px;
+}
+.stat-image img {
+   width: 100%;
+   height: 100%;
+}
+.content {
+   width: 564px;
+   padding: var(--spacing-800) var(--spacing-1000);
+   flex-direction: column;
+   gap: 72px;
+   justify-content: space-between;
+   align-items: start;
+}
+.text h1 {
+   font-size: 36px;
+   line-height: 125%;
+}
+.text {
+   gap: 24px;
+   flex-direction: column;
+}
+.text h1 span {
+   color: var(--color-puple-500);
+}
+.text p {
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 165%;
+   padding-right: 30px;
+}
+.stats {
+   gap: var(--spacing-800);
+}
+.stat-value {
+   font-size: 24px;
+   line-height: 120%;
+}
