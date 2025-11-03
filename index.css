@@ -92,7 +92,7 @@ main{
 /* TABLET SCREEN */
 @media (max-width: 1192px) {
    main {
-      padding: 50px 0;
+      padding: 90px 0;
    }
    .card {
       width: 564px;
@@ -103,5 +103,40 @@ main{
    }
    .content {
       order: 2;
+   }
+}
+/* MOBILE SCREEN */
+@media (max-width: 630px) {
+   main {
+      padding: 80px 0;
+   }
+   .card {
+      width: 327px;
+   }
+   .stat-image {
+      height: 420px;
+   }
+   .stat-image img {
+      src: url(./assets/image-header-mobile.jpg);
+   }
+   .content {
+      padding: var(--spacing-300) var(--spacing-400);
+      gap: var(--spacing-500);
+      text-align: center;
+   }
+   .text {
+      gap: var(--spacing-100);
+   }
+   .text h1 {
+      font-size: 28px;
+   }
+   .text p {
+      padding: 0;
+   }
+   .stats {
+      gap: var(--spacing-400);
+      flex-direction: column;
+      text-align: center;
+      align-self: center;
    }
 }
