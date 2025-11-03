@@ -50,10 +50,12 @@ main{
 .stat-image {
    height: 442px;
    width: 564px;
+   background-color: var(--color-puple-500);
 }
 .stat-image img {
    width: 100%;
    height: 100%;
+   mix-blend-mode: multiply;
 }
 .content {
    width: 564px;
