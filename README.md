@@ -14,7 +14,7 @@ Users should be able to:
 
 
 ## Screenshot
-! [Desktop Preview] (./Stats preview card.png)
+![Desktop Preview] (./Stats preview card.png)
 
 # Acknowledgements
 
