@@ -37,7 +37,7 @@
 }
 main{
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
    background-color: var(--color-navy-950);
    color: var(--color-white);
 }
@@ -49,7 +49,7 @@ main{
 }
 .stat-image {
    height: 442px;
-   width: 564px;
+   width: min(100%, 564px);
    background-color: var(--color-puple-500);
 }
 .stat-image img {
@@ -58,7 +58,7 @@ main{
    mix-blend-mode: multiply;
 }
 .content {
-   width: 564px;
+   width: min(100%, 564px);
    padding: var(--spacing-800) var(--spacing-1000);
    flex-direction: column;
    gap: 72px;
@@ -88,4 +88,20 @@ main{
 .stat-value {
    font-size: 24px;
    line-height: 120%;
+}
+/* TABLET SCREEN */
+@media (max-width: 1192px) {
+   main {
+      padding: 50px 0;
+   }
+   .card {
+      width: 564px;
+      flex-direction: column;
+   }
+   .stat-image {
+      order: 1;
+   }
+   .content {
+      order: 2;
+   }
 }
